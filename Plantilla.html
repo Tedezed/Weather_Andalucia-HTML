@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<!CREATE BY: Tedezed>
+<html>
+	<head>
+		<title>El Tiempo en Andalucia</title>
+	</head>
+	<body>
+		<h1>El Tiempo en Andalucia</h1>
+		{% set count = 0 %}
+		{%- for ncapitalh in capitalh %}
+			<h2>{{ ncapitalh }}</h2>
+			<ul>
+				<li>Temperatura minima prevista: {{ centh[count] }} C</li>
+				<li>Temperatura maxima prevista: {{ centmaxh[count] }} C</li>
+				<li>Velocidad del viento: {{ vspeedh[count] }} Km/h</li>
+				<li>Direccion del viento: {{ vdirech[count] }}</li>
+				{% set count = count + 1 %}
+			</ul>
+		{%- endfor %}
+	</body>
+</html>
