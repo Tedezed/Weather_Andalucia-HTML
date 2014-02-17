@@ -50,12 +50,10 @@ while ncapital <= 7:
 	list_vspeed.append(vspeed)
 	list_vdirec.append(vdirec)
 
-
 	ncapital = ncapital + 1
 
 Plantilla_sal = Plantilla.render(capitalh=capital,centh=list_cent,centmaxh=list_centmax,vspeedh=list_vspeed,vdirech=list_vdirec)
 archi=open('Plantilla_sal.html','w')
 archi.write(Plantilla_sal)
 archi.close()
-
 os.system("firefox Plantilla_sal.html")
