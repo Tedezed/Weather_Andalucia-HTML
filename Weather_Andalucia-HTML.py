@@ -23,7 +23,7 @@ while ncapital <= 7:
 
 	fel = int(dicc['main']['temp_min'])
 	felmax = int(dicc['main']['temp_max'])
-	vspeed = dicc['wind']['speed']
+	vspeed = dicc['wind']['speed']*1600/1000
 	vdirec = int(dicc['wind']['deg'])
 	cent=str(fel-273)
 	centmax=str(felmax-273)
