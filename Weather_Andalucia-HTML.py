@@ -56,4 +56,4 @@ Plantilla_sal = Plantilla.render(capitalh=capital,centh=list_cent,centmaxh=list_
 archi=open('Plantilla_sal.html','w')
 archi.write(Plantilla_sal)
 archi.close()
-os.system("firefox Plantilla_sal.html")
+os.system("firefox Plantilla_sal.html &")
