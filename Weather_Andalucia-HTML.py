@@ -1,5 +1,5 @@
 #Create by: Tedezed
-import os
+import webbrowser
 import requests
 import json
 from jinja2 import Template
@@ -56,4 +56,4 @@ Plantilla_sal = Plantilla.render(capitalh=capital,centh=list_cent,centmaxh=list_
 archi=open('Plantilla_sal.html','w')
 archi.write(Plantilla_sal)
 archi.close()
-os.system("firefox Plantilla_sal.html &")
+webbrowser.open("Plantilla_sal.html")
