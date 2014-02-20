@@ -4,9 +4,32 @@
 		<title>El Tiempo en Andalucia</title>
 	</head>
 	<body>
+		<a name="Inicio"></a>
 		<h1>El Tiempo en Andalucia</h1>
+		<h3>Provincias:</h3>
+		{% for link in capitalh %}
+		<p><a href="#{{ link }}">{{ link }}</a></p>
+		{% endfor %}
+		<p>
+		</br>
+		</br>
+		</br>
+		</br>
+		</br>
+		</br>
+		</br>
+		</br>
+		</br>
+		</br>
+		</br>
+		</br>
+		</br>
+		</br>
+		</p>
 		{% set count = 0 %}
 		{%- for ncapitalh in capitalh %}
+			<a name="{{ ncapitalh }}"></a>
+			<p><a href="#Inicio">Inicio</a></p>
 			<h2>{{ ncapitalh }}</h2>
 			<IMG SRC="images/{{ ncapitalh }}.jpg" WIDTH=300 HEIGHT=180 BORDER=1>
 			<ul>
@@ -17,6 +40,21 @@
 				<IMG SRC="images/{{ vdirech[count] }}.jpg"WIDTH=120 HEIGHT=120 BORDER=1>
 				{% set count = count + 1 %}
 			</ul>
+			<p>
+		</br>
+		</br>
+		</br>
+		</br>
+		</br>
+		</br>
+		</br>
+		</br>
+		</br>
+		</br>
+		</br>
+		</br>
+		</br>
+		</p>
 		{%- endfor %}
 	</body>
 </html>
