@@ -8,11 +8,13 @@
 		{% set count = 0 %}
 		{%- for ncapitalh in capitalh %}
 			<h2>{{ ncapitalh }}</h2>
+			<IMG SRC="images/{{ ncapitalh }}.jpg" WIDTH=300 HEIGHT=180 BORDER=1>
 			<ul>
 				<li>Temperatura minima prevista: {{ centh[count] }} C</li>
 				<li>Temperatura maxima prevista: {{ centmaxh[count] }} C</li>
 				<li>Velocidad del viento: {{ vspeedh[count] }} Km/h</li>
 				<li>Direccion del viento: {{ vdirech[count] }}</li>
+				<IMG SRC="images/{{ vdirech[count] }}.jpg"WIDTH=120 HEIGHT=120 BORDER=1>
 				{% set count = count + 1 %}
 			</ul>
 		{%- endfor %}
