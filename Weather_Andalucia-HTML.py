@@ -24,7 +24,12 @@ while ncapital <= 7:
 
 	if dicc == {u'message': u'Error: Not found city', u'cod': u'404'}:
 		llave = False
+		cent = 'N/N'
+	 	centmax = 'N/N'
+		vspeed = 'N/N'
+		vdirec = 'Norte'
 		#Llave False no Error
+		
 	if llave == True:
 		fel = int(dicc['main']['temp_min'])
 		felmax = int(dicc['main']['temp_max'])
@@ -63,3 +68,4 @@ archi=open('Plantilla_sal.html','w')
 archi.write(Plantilla_sal)
 archi.close()
 webbrowser.open("Plantilla_sal.html")
+
